@@ -17,14 +17,13 @@ namespace ProTechPractice
                 string line = Console.ReadLine();
                 char[] words = line.ToCharArray();
                 bool even = (line.Count() % 2) == 0;
-                int countLine = line.Count();
                 if (even)
                 {
-                    for (int i = (countLine / 2) - 1; i >= 0; i--)
+                    for (int i = (words.Length / 2) - 1; i >= 0; i--)
                     {
                         Console.Write(words[i]);
                     }
-                    for (int i = countLine - 1; i >= countLine / 2; i--)
+                    for (int i = words.Length - 1; i >= words.Length / 2; i--)
                     {
                         Console.Write(words[i]);
                     }
@@ -32,11 +31,11 @@ namespace ProTechPractice
                 }
                 else
                 {
-                    for (int i = countLine - 1; i >= 0; i--)
+                    for (int i = words.Length - 1; i >= 0; i--)
                     {
                         Console.Write(words[i]);
                     }
-                    for (int i = 0; i < countLine; i++)
+                    for (int i = 0; i < words.Length; i++)
                     {
                         Console.Write(words[i]);
                     }
