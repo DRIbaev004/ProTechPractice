@@ -10,7 +10,7 @@ namespace ProTechPractice
     internal class Lab2 : Lab1
     {
         // Флаг для проверки правильности строки
-        static bool flag = true;
+        protected static bool flag = true;
         // Проверка правильности строки
         public static void IsTrue()
         {

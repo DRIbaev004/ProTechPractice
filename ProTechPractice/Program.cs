@@ -22,6 +22,10 @@ namespace ProTechPractice
                 Console.WriteLine("Задание 2");
                 Lab2.IsTrue();
                 Console.WriteLine("------------------------");
+                // 3 задание
+                Console.WriteLine("Задание 3");
+                Lab3.ToDictionary();
+                Console.WriteLine("------------------------");
             }
         }
     }
