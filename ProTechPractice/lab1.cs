@@ -8,40 +8,46 @@ using System.Threading.Tasks;
 
 namespace ProTechPractice
 {
-    internal class lab1
+    internal class Lab1
     {
-        static void Main(string[] args)
+        //полученная строка
+        protected static string line;
+        // массив char для полученной строки
+        protected static char[] letters; 
+        // чтение строки и перевод в массив символов
+        public static void ReadOfLine()
         {
-            while (true)
-            {
-                string line = Console.ReadLine();
-                char[] words = line.ToCharArray();
-                bool even = (line.Count() % 2) == 0;
-                if (even)
-                {
-                    for (int i = (words.Length / 2) - 1; i >= 0; i--)
-                    {
-                        Console.Write(words[i]);
-                    }
-                    for (int i = words.Length - 1; i >= words.Length / 2; i--)
-                    {
-                        Console.Write(words[i]);
-                    }
-                    Console.WriteLine();
-                }
-                else
-                {
-                    for (int i = words.Length - 1; i >= 0; i--)
-                    {
-                        Console.Write(words[i]);
-                    }
-                    for (int i = 0; i < words.Length; i++)
-                    {
-                        Console.Write(words[i]);
-                    }
-                    Console.WriteLine();
-                }
-            } 
+            line = Console.ReadLine();
+            letters = line.ToCharArray();
         }
+        // проверка четности строки и соответсвующий вывод
+        public static void WriteOfElements()
+        {
+            if ((line.Count() % 2) == 0)// проверка четности
+            {
+                for (int i = (letters.Length / 2) - 1; i >= 0; i--)
+                {
+                    Console.Write(letters[i]);
+                }
+                for (int i = letters.Length - 1; i >= letters.Length / 2; i--)
+                {
+                    Console.Write(letters[i]);
+                }
+                Console.WriteLine();
+            }
+            else
+            {
+                for (int i = letters.Length - 1; i >= 0; i--)
+                {
+                    Console.Write(letters[i]);
+                }
+                for (int i = 0; i < letters.Length; i++)
+                {
+                    Console.Write(letters[i]);
+                }
+                Console.WriteLine();
+            }
+        }
+    
     }
 }
