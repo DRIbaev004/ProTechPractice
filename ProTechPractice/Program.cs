@@ -26,6 +26,10 @@ namespace ProTechPractice
                 Console.WriteLine("Задание 3");
                 Lab3.ToDictionary();
                 Console.WriteLine("------------------------");
+                // 4 задание
+                Console.WriteLine("Задание 4");
+                Lab4.LargestString();
+                Console.WriteLine("------------------------");
             }
         }
     }
