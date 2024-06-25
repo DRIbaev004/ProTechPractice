@@ -16,7 +16,7 @@ namespace ProTechPractice
         // массив char для полученной строки
         protected static char[] letters;
         // массив char для исправленной строки
-        protected static char[] correctedLetters;
+        public static char[] correctedLetters;
         // исправленная строка
         protected static string correctedLine = "";
         
