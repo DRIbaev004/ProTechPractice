@@ -9,6 +9,7 @@ namespace ProTechPractice
 {
     internal class Lab6 : Lab5
     {
+        // метод для удаления символа 
         public static void DeleteSymbol()
         {
             if (flag)
@@ -23,7 +24,7 @@ namespace ProTechPractice
             }
             flag = true;
         }
-
+        // генерация случайного числа
         private static int GetRandomNum(int min, int max)
         {
             int randomNum;
