@@ -46,7 +46,6 @@ namespace ProTechPractice
             {
                 Console.WriteLine("Введены неверные символы:");
             }
-           // flag = true;
         }
     }
 }
