@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -33,6 +35,10 @@ namespace ProTechPractice
                 // 5 задание
                 Console.WriteLine("Задание 5");
                 Lab5.Choose();
+                Console.WriteLine("------------------------");
+                // 6 задание
+                Console.WriteLine("Задание 6");
+                Lab6.DeleteSymbol();
                 Console.WriteLine("------------------------");
             }
         }

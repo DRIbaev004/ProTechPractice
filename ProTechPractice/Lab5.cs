@@ -33,7 +33,7 @@ namespace ProTechPractice
             {
                 Console.WriteLine("Введены неверные символы:");
             }
-            flag = true;
+            //flag = true;
         }
         // Сортировка деревом
         public static char[] TreeSort(char[] array)
